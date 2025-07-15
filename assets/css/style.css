@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(255, 242, 242);
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(83, 83, 255);
+}
+
+.boxContainer {
+    display: flex;
+    justify-content: space-around; /* balise div en flex et placer les div de chaque côté de la page */
+    align-items: center;
+}
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mise en place de la barre de navigation. Ne pas mettre de style au contenu de la balise ul*/
+#navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#navigation li {
+  display: inline;
+  margin-right: 1px;
+  color: rgb(255, 255, 255);
+}
+
+#navigation li a {
+  padding-right: 100px;
+  color: rgb(255, 255, 255);
+  font: 1em "Trebuchet MS",Arial,sans-serif;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Positionner la balise H1 en bas à gauche du header*/
+.boxContainer > div{
+    padding-top: 5px;
+    padding-left: 250px;
+}
+
+/* Mettre en flex les cartes responsives */
+.boxContainerResponsiveCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.divTitleH2 {
+    margin-left: 235px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Permet de construire les cartes responsives */
+.divCards {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    max-width: 20%;
+    height: 100px;
+    margin-left: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Permet de construire le bloc div contenant l'image. Flex est utilisé pour centrer et aligner.*/
+.divCardImage {
+    width: 120vh;
+    height: 60vh;
+    background-color: rgb(216, 216, 216);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Permet de formatter le contenu du bloc span */
+.divCardImage > span {
+    max-width: 100%;
+    height: auto;
+    font-size: 80px;
+    color: rgb(182, 182, 182);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+/* Permet de mettre en flex les blocs div */
+.boxContainerResponsiveCardsColumn {
+    display: flex;
+    flex: 1;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* Permet de centrer le contenu des blocs div */
+.divCardsColumn {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    /* max-width: 20%; */
+    height: 100px;
+    margin-left: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
